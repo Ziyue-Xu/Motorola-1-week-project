@@ -3,7 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Settings</title>
+    <title>Alerts</title>
+    <link rel="stylesheet" href="/CSS/normalize.css" />
+    <link rel="stylesheet" href="/CSS/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <nav class="nav collapsible">
+      <a class="nav__brand" href="/MotoSomething/main.html"
+        ><img style="width: 15%" src="/images/Logo.png" alt="Logo"
+      /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item">
+          <a href="/main.html">Dashboard</a>
+        </li>
+        <li class="nav__item">
+          <a href="/pages/alerts.html">Alerts</a>
+        </li>
+        <li class="nav__item">
+          <a href="/pages/settings.html">Settings</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="block__heading">Settings</h2>
+      </header>
+    </section>
+    <div class="settings__header left">
+      <h3>Appearance Preferences</h3>
+      <div class="grid grid--1x2">
+        <h4>Font Size</h4>
+        <div class="">
+          <input type="range" min="1" max="100" value="50" />
+        </div>
+        <h4>Resolution Size</h4>
+        <div class="">
+          <h4>Frame Rate</h4>
+        </div>
+      </div>
+    </div>
+    </section>
+    <div class="settings__header right">
+      <h3>System Preferences</h3>
+      <div class="grid grid--1x2">
+        <h4>Logging and Reporting</h4>
+      </div>
+      <h4>Recording and Storage</h4>
+        <h5>Recording Intervals</h5>
+    </div>
+  </body>
 </html>
